@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .hidden-content {
+      display: none;
+    }
+
+    #toggleButton {
+      cursor: pointer;
+      color: blue;
+      text-decoration: underline;
+      margin-top: 20px; /* قم بتعديل هذه القيمة حسب الحاجة */
+    }
+  </style>
+  <title>Show/Hide Example</title>
+</head>
+<body>
+
+  <p>This is some visible content.</p>
+
+  <div id="hiddenContent" class="hidden-content">
+  
+<section style="background-image:url(./img/search_FILL0_wght400_GRAD0_opsz48.png);margin-top: 100px;">
+
+
+    <section id="moslsal">
+      <div>
+  <p id="p">Cima Club</p>
+  <br>
+  <h1 id="op">الافلام والبرامج المباشره<br> للعائليه والاصدقاء</h1>
+  <p id="oop">Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit. Architecto sapiente doloremque nam odit, magni iure,<br> suscipit facilis ex adipisci explicabo eius <br> cum minus quasi quos illo pariatur necessitatibus! Quam, fugit.</p>
+  <h2><span>4K HD</span> +20</h2>
+  
+  <button id="sh">شاهد الان</button>
+  </div>
+  <div id="mosl">
+  
+  
+      <div class="card">
+          <img src="./img/yYxwyzV3ND.jpeg" alt="Avatar" style="width:100%">
+         
+        </div>
+  
+  
+  </div>
+  
+  </section>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+     <div class="cards">
+         
+          <div class="services">
+          
+              <div class="content content-2">
+  
+                
+  
+  
+                
+  
+                  <img style="position: right;" src="./img/breaking bad.jpg" width="100%" alt="">
+                  <p class="pra">مشاهدة وتحميل مسلسل الجريمة والدراما والاثارة الاسطوري بريكينج باد اختلال ضال Breaking Bad S01 HD الموسم الخامس مترجم للنجم براين كرانستون وآرون بول اون لاين وتحميل مباشر Breaking Bad S01 Online بريكينج باد الجزء </p>
+                  <a id="aw" href="#">DOWNLOAD AND WATCH</a>
+               </div>
+             
+              <div class="content content-2">
+               
+                  <img src="./img/game.jpg" width="100%"  alt="">
+                  <p class="pra">مشاهدة وتحميل مسلسل الجريمة والدراما بيكي بلايندرز الاقنعه الهزيله Peaky Blinders S01 HD الموسم الاول مترجم للنجم كيليان مورفي اون لاين وتحميل مباشر Peaky Blinders S04 Online بيكي بلايندرز الجزء 4</p>
+                  <a id="aw" href="#">DOWNLOAD AND WATCH</a>
+               </div>
+             
+  
+  
+  
+  
+               
+              <div class="content content-2">
+               
+                  <img src="./img/loki.jpg" width="100%" alt="">
+                  <p class="pra">مشاهدة وتحميل مسلسل الجريمة والدراما والاثارة الاسطوري بريكينج باد اختلال ضال Breaking Bad S05 HD الموسم الخامس مترجم للنجم براين كرانستون وآرون بول اون لاين وتحميل مباشر Breaking Bad S05 Online بريكينج باد الجزء 5</p>
+                  <a id="aw" href="#">DOWNLOAD AND WATCH</a>
+               </div>
+             
+              
+             
+             </div>
+          </div>
+       </div>
+  </section>
+  
+  
+  
+  </div>
+
+  <div id="toggleButton">Show More</div>
+
+  <script>
+    document.getElementById('toggleButton').addEventListener('click', function () {
+      var hiddenContent = document.getElementById('hiddenContent');
+      if (hiddenContent.style.display === 'none') {
+        hiddenContent.style.display = 'block';
+        document.getElementById('toggleButton').innerText = 'Show Less';
+      } else {
+        hiddenContent.style.display = 'none';
+        document.getElementById('toggleButton').innerText = 'Show More';
+      }
+    });
+  </script>
+
+</body>
+</html>
